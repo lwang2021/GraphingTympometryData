@@ -1,9 +1,11 @@
 #!/bin/bash
 
-awk -F'[<>]' '/<XYDataOrigin>/ || /<EarSide>/ || /<X>/ || /<Y>/ {print $3}' "./Files/Test4.xml" > rawData.txt
+filename=$(ls ./files | grep xml)
+
+awk -F'[<>]' '/<XYDataOrigin>/ || /<EarSide>/ || /<X>/ || /<Y>/ {print $3}' "./Files/$filename" > rawData.txt
 
 py read.py
 
-awk -F'[<>]' '/<PeakPressure>/ {print $3}' "./Files/Test4.xml" > rawData.txt
+awk -F'[<>]' '/<PeakPressure>/ {print $3}' "./Files/$filename" > rawData.txt
 
 py peakPressure.py
