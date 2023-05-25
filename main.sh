@@ -2,7 +2,9 @@
 
 currentPath=$(dirname "$(realpath "$0")")
 
-cd $currentPath/Files
+cp $currentPath/audiogramTemplate.csv $currentPath/"Output Files"/audiogramOutput.csv
+
+cd $currentPath/"Input Files"
 
 filesPath=$(pwd)
 
@@ -21,7 +23,7 @@ for dir in "${directories[@]}"; do
 
     if [ $patientNum -le 0 ]; then
         echo "Please number (all) your patients with a valid Record ID"
-        echo "Valid Record IDs are strictly greater than 1"
+        echo "Valid Record IDs are strictly greater than 0"
         echo "Try again once you have"
         exit 1
     fi
