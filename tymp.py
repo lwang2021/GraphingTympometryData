@@ -2,7 +2,6 @@ import sys
 import os
 import csv
 from lxml import etree
-from frequency import tonePoint
 
 if len(sys.argv) == 3:
     arg1 = sys.argv[1]
