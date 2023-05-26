@@ -7,7 +7,6 @@ from frequency import tonePoint
 if len(sys.argv) == 3:
     arg1 = sys.argv[1]
     arg2 = sys.argv[2]
-    print(arg1)
 else:
     print("Invalid number of arguments provided.")
     exit(1)

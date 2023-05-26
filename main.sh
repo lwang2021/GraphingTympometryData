@@ -3,6 +3,7 @@
 currentPath=$(dirname "$(realpath "$0")")
 
 cp $currentPath/audiogramTemplate.csv $currentPath/"Output Files"/audiogramOutput.csv
+cp $currentPath/tympanogramTemplate.csv $currentPath/"Output Files"/tympanogramOutput.csv
 
 cd $currentPath/"Input Files"
 
