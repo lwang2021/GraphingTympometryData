@@ -28,7 +28,7 @@ done <<< "$unparsedDirectories"
 for dir in "${directories[@]}"; do
 
     # Converts it into an integer
-    let patientNum=$dir
+    let patientNum=$(echo "$dir" | sed 's/^0*//')
 
     # Checking for errors
     if [ $patientNum -le 0 ]; then

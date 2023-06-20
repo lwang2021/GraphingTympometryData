@@ -40,6 +40,9 @@ except:
     print("An error occured, please confirm that your file is correctly formatted")
     exit(1)
 
+data.append(1)
+data.append(1)
+
 # Writing to the CSV file
 csv_file = current_directory + "/Output Files/tympanogramOutput.csv"
 

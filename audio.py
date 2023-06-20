@@ -80,6 +80,10 @@ for tone in unparsedData:
             print("Error with file: " + arg2)
             exit(1)
 
+for thatList in [rightAC, rightBC, leftAC, leftBC]:
+    if not thatList:
+        thatList.append(tonePoint(0, 0, 0))
+
 # Places the list values into the CSV file
 # Places into the data list
 for i in range(6):
@@ -119,6 +123,8 @@ for i in range(6):
             elif (i == (len(leftBC) - 1)):
                 data.append('')
                 data.append('')
+
+data.append(1)
 
 # Writing to the CSV file 
 csv_file = current_directory + "/Output Files/audiogramOutput.csv"

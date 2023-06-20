@@ -1,1 +1,1 @@
-record_id,le_pressure,le_volume,le_gradient,le_compliance,re_pressure,re_volume,re_gradient,re_compliance,le_p1,le_p2,le_p3,re_p1,re_p2,re_p3
+record_id,le_pressure,le_volume,le_gradient,le_compliance,re_pressure,re_volume,re_gradient,re_compliance,le_p1,le_p2,le_p3,re_p1,re_p2,re_p3,tympanogram_complete,williams_test_complete
