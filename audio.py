@@ -67,11 +67,11 @@ for tone in unparsedData:
         
         # Places the values into the correct list
         # Refer to frequency.py for tonePoint class
-        if (earSide == "Right") and (conduction == "IP"):
+        if (earSide == "Right") and ((conduction == "IP") or (conduction == "AC")):
             rightAC.append(tonePoint(frequency, value, masking))
         elif (earSide == "Right") and (conduction == "BC"):
             rightBC.append(tonePoint(frequency, value, masking))
-        elif (earSide == "Left") and (conduction == "IP"):
+        elif (earSide == "Left") and ((conduction == "IP") or (conduction == "AC")):
             leftAC.append(tonePoint(frequency, value, masking))
         elif (earSide == "Left") and (conduction == "BC"):
             leftBC.append(tonePoint(frequency, value, masking))
